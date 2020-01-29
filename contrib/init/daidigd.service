@@ -1,0 +1,22 @@
+[Unit]
+Description=Daidig's distributed currency daemon
+After=network.target
+
+[Service]
+User=daidigcore
+Group=daidigcore
+
+Type=forking
+PIDFile=/var/lib/daidigd/daidigd.pid
+ExecStart=/usr/bin/daidigd -daemon -pid=/var/lib/daidigd/daidigd.pid \
+-conf=/etc/daidigcore/daidig.conf -datadir=/var/lib/daidigd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

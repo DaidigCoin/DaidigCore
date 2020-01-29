@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Daidig Core
+Comment=Daidig P2P Cryptocurrency
+Comment[de]=Verbinde mit dem Daidig peer-to-peer Netzwerk
+Comment[fr]=Daidig, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Daidig, eşten eşe kriptografik sanal para birimi
+Exec=daidig-qt %u
+Terminal=false
+Type=Application
+Icon=daidig128
+MimeType=x-scheme-handler/daidig;
+Categories=Office;Finance;

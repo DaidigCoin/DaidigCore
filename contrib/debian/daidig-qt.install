@@ -1,0 +1,6 @@
+usr/local/bin/daidig-qt usr/bin
+share/pixmaps/daidig32.xpm usr/share/pixmaps
+share/pixmaps/daidig16.xpm usr/share/pixmaps
+share/pixmaps/daidig128.png usr/share/pixmaps
+debian/daidig-qt.desktop usr/share/applications
+debian/daidig-qt.protocol usr/share/kde4/services/
